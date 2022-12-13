@@ -1,0 +1,111 @@
+version: "2.0"
+
+rules:
+
+- rule: Greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: affirm
+  steps:
+  - intent: affirm
+  - action: utter_ok
+
+  
+- rule: help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_noworries
+
+- rule: Out Of Scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+################################################################ UNIVERSAL CREDIT ################################################################
+
+- rule: universal_credit
+  steps:
+  - intent: universal_credit
+  - action: utter_universal_credit
+
+- rule: where you get UC
+  steps:
+  - intent: where_you_get_uc
+  - action: utter_where_you_get_uc
+
+- rule: eligibility for UC
+  steps:
+  - intent: eligibility_uc
+  - action: utter_eligibility_uc
+
+- rule: How UC is paid
+  steps:
+  - intent: how_uc_paid
+  - action: utter_how_uc_paid
+
+- rule: Other Benefits of UC
+  steps:
+  - intent: other_benefits_uc
+  - action: utter_other_benefits_uc
+
+- rule: Sanctions on UC
+  steps:
+  - intent: sanctions_uc
+  - action: utter_sanctions_uc
+
+################################################################ SUPPORT FOR REFUGEES ################################################################
+
+- rule: The Refugees
+  steps:
+  - intent: refugees 
+  - action: utter_refugees
+
+
+- rule: Hosting A Refugee
+  steps:
+  - intent: hosting_refugees 
+  - action: utter_hosting_refugees
+
+
+- rule: Supporting a Refugee
+  steps:
+  - intent: support_refugees
+  - action: utter_support_refugees
+
+- rule: Local Refugee Groups
+  steps:
+  - intent: local_refugee_groups
+  - action: utter_local_refugee_groups
+
+################################################################ Starting a Business ################################################################
+- rule: Starting a Business
+  steps:
+  - intent: starting_business
+  - action: utter_starting_business
+
+- rule: Becoming an Enntrepreneur
+  steps:
+  - intent: becoming_entrepreneur
+  - action: utter_becoming_entrepreneur
+
+- rule: How to start a business
+  steps:
+  - intent: how_start_business
+  - action: utter_how_start_business
+  
+- rule: Where to get Advice on Starting a business
+  steps:
+  - intent: advice_on_starting_business
+  - action: utter_advice_on_starting_business

@@ -1,0 +1,166 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - help
+  - thankyou
+  - universal_credit
+  - where_you_get_uc
+  - eligibility_uc
+  - how_uc_paid
+  - other_benefits_uc
+  - sanctions_uc
+  - refugees
+  - hosting_refugees
+  - support_refugees
+  - local_refugee_groups
+  - starting_business
+  - becoming_entrepreneur
+  - how_start_business
+  - advice_on_starting_business
+  - out_of_scope
+
+responses:
+  utter_greet:
+  - text: "Hello and Welcome to our Chatbot. Here you can ask about the following topics:"
+    buttons:
+    - title: "Starting Business"
+      payload: "/starting_business"
+
+    - title: "Refugees"
+      payload: "/refugees"
+
+    - title: "Universal Credit"
+      payload: "/universal_credit"
+
+  utter_out_of_scope:
+  - text: "Sorry, I'm not sure how to respond to that. Type 'Help' for assistance."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_noworries:
+  - text: "You're welcome :)"
+  
+  utter_ok:
+  - text: "Perfect"
+
+  utter_help:
+  - text: "I can help you with Universal Credit, Refugees, and Entrepreneurship queries. \nYou can ask me things like:
+   \n- How is Universal Credit paid?  \n- how to become an entrepreneur? \n- I want to host a refugee \n- Where can I get advice to start a business"
+
+
+  ################################################################ UNIVERSAL CREDIT ################################################################
+
+  utter_universal_credit:
+  - text: "Universal Credit is a payment to help with your living costs. It's paid monthly - or twice a month for some people in Scotland. You may be able to get it if you're on a low income, out of work or you cannot work."
+    buttons:
+    - title: "Eligibility for Universal Credit"
+      payload: "/eligibility_uc"
+
+    - title: "Where do you get Universal Credit"
+      payload: "/where_you_get_uc"
+
+    - title: "How is Universal Credit paid"
+      payload: "/how_uc_paid"
+
+    - title: "Other benefits of Universal Credit"
+      payload: "/other_benefits_uc"
+
+    - title: "Sanctions on Universal Credit"
+      payload: "/sanctions_uc"
+
+  utter_where_you_get_uc:
+  - text: "From here you can get your universal credit: \n
+          \nhttps://www.citizensadvice.org.uk/resources-and-tools/search-navigation-tools/Search/?q=Where+you+get+Universal+Credit&c=SERP-PUBLIC \n
+          \nhttps://www.gov.uk/universal-credit/contact-universal-credit \n
+          \nhttps://www.gov.uk/universal-credit/how-to-claim "
+
+  utter_eligibility_uc:
+  - text: "From here you can see the eligibility for universal credit: \n
+          \nhttps://www.gov.uk/contact-jobcentre-plus \n
+          \nhttps://www.citizensadvice.org.uk/resources-and-tools/search-navigation-tools/Search/?c=HOME&q=eligibility+universal+credit+ \n
+          \nhttps://www.gov.uk/universal-credit/eligibility "
+
+  utter_how_uc_paid:
+  - text: "Universal Credit is paid once a month, usually into your bank, building society or credit union account. \n
+          \nhttps://www.gov.uk/universal-credit/how-youre-paid \n
+          \nhttps://www.citizensadvice.org.uk/resources-and-tools/search-navigation-tools/Search/?q=How+is+Universal+Credit+paid?&c=SERP-PUBLIC "
+
+  utter_other_benefits_uc:
+  - text: "You might be able to get: help with health costs, including prescriptions and dental treatment. Funeral Expenses Payment. Help with building up savings through Help to Save \n
+          \nhttps://www.gov.uk/universal-credit/other-financial-support \n
+          \nhttps://www.citizensadvice.org.uk/benefits/universal-credit/before-you-apply/moving-to-universal-credit-from-other-benefits/ "
+
+  utter_sanctions_uc:
+  - text: "Getting a sanction means your Universal Credit payment will be temporarily reduced. \n
+          \nhttps://www.citizensadvice.org.uk/benefits/universal-credit/sanctions/if-youve-been-sanctioned/ \n
+          \nhttps://www.gov.uk/government/publications/universal-credit-sanctions-statistics-background-information-and-methodology/a"
+          
+################################################################ SUPPORT FOR REFUGEES ################################################################
+  utter_refugees:
+  - text: "A person who has been forced to leave their country in order to escape war, persecution, or natural disaster."
+    buttons:
+    - title: "Host a Refugee"
+      payload: "/hosting_refugees"
+
+    - title: "Support Refugees"
+      payload: "/support_refugees"
+
+    - title: "Local Refugee Group/Network"
+      payload: "/local_refugee_groups"
+
+  utter_hosting_refugees:
+  - text: "Being able to host a refugee helps someone in great need. You can get advice on becoming a host here: \n
+          \nhttps://www.london.gov.uk/what-we-do/volunteering/search/refugees-at-home "
+
+  utter_support_refugees:
+  - text: "In London, the Refugee Council supports refugees to settle in the UK. You can contact them,or support them, here: \n
+          \nhttps://www.refugeecouncil.org.uk/ "
+
+  utter_local_refugee_groups:
+  - text: "There are local organisations supporting refugees:
+          \nIn Lewisham: https://www.lrmn.org.uk/
+          \nIn Lambeth: https://beta.lambeth.gov.uk/housing/finding-home/homelessness-prevention-housing-advice/day-centres-rough-sleepers/refugee \n
+          \nIn Southwark: http://www.southwarksrp.org/ "
+
+################################################################ Starting a Business ################################################################
+  utter_starting_business:
+  - text: "Following are the topics you can get details about:"
+    buttons:
+    - title: "Become an Entrepreneur"
+      payload: "/becoming_entrepreneur"
+
+    - title: "How to Start a Business"
+      payload: "/how_start_business"
+
+    - title: "Where to get advice on Starting a Business"
+      payload: "/local_refugee_groups"
+
+  utter_becoming_entrepreneur:
+  - text: "When choosing where to do business, London meets all the right criteria. \n
+          \nhttps://www.london.gov.uk/what-we-do/business-and-economy/supporting-business/mayors-entrepreneur-programme \n
+          \nhttps://www.fsb.org.uk/search.html?q=Becoming+an+Entrepreneur+ \n
+          \nhttps://www.londonchamber.co.uk/support/search-results/?searchtext=Becoming%20an%20Entrepreneur&searchmode=allwords \n
+          \nhttps://www.citizensadvice.org.uk/"
+
+  utter_how_start_business:
+  - text: "Starting a business is always a challenge in London. \n
+          \nhttps://www.london.gov.uk/what-we-do/business-and-economy \n
+          \nhttps://www.fsb.org.uk/search.html?yearMonth=&q=How+to+start+a+business&sortOrder=_score+desc \n
+          \nhttps://www.londonchamber.co.uk/what-we-offer/services/lcci-business-mentoring/ \n
+          \nhttps://www.citizensadvice.org.uk/resources-and-tools/search-navigation-tools/Search/?c=HOME&q=How+to+start+a+business "
+
+  utter_advice_on_starting_business:
+  - text: "From here you can get the advice or information regarding a new business: \n
+          \nhttps://www.london.gov.uk/what-we-do/business-and-economy/supporting-business \n
+          \nhttps://www.fsb.org.uk/search.html?q=Where+to+get+advice+on+starting+a+business+ \n
+          \nhttps://www.londonchamber.co.uk/what-we-offer/services/business-development-support-services/ \n
+          \nhttps://www.citizensadvice.org.uk/ "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

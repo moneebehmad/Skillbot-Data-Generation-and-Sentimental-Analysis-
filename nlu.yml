@@ -1,0 +1,676 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: affirm
+  examples: |
+    - indeed
+    - correct
+    - that sounds good
+    - yes
+    - yess please
+    - of course
+    - yup
+    - yeah
+    - yes please
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - yo
+    - ok
+    - ye
+    - okay
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep!
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes please!
+    - Yes, I accept
+
+- intent: deny
+  examples: |
+    - not really
+    - no
+    - I don't think so
+    - never
+    - no way
+    - nope
+    - no thanks
+    - I dunno
+    - Nothing!
+    - nevermind
+    - n
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+
+- intent: goodbye
+  examples: |
+    - see you later
+    - goodbye
+    - i'm done
+    - quit
+    - stop
+    - bye
+    - Adios
+    - BYEE
+    - GOODBYE
+    - Thanks a lot. See ya later
+    - have a good day. time to go, bye
+    - bye bye
+    - ok i gtg
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - ALLAH Hafiz
+    - allahhafiz
+    - tata
+    - AH
+
+- intent: thankyou
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - thank you
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+    - Awesome, you are a good bot!
+    - great!
+    - I see, thanks
+    - Oh thats good!
+    - it's good :-)
+    - thnaks
+    - good job bot
+    - great
+    - thanks for the help
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - thanks for your information
+    - thanks f
+
+- intent: help
+  examples: |
+    - help
+    - what can you do?
+    - what can I ask you?
+    - what do you do?
+    - what can you help me with?
+    - help me
+    - help, what do you do
+    - how do I use this
+    - how can you help me
+    - What are the things that you can do?
+    - What else can you help me with?
+    - can you do anything else?
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help
+    - help me
+    - help please
+    - help pls
+    - help?
+    - hep me
+################################################################ UNIVERSAL CREDIT ################################################################
+
+- intent: universal_credit
+  examples: |
+    - what is Universal Credit
+    - what universal credit is?
+    - tell me about universal credit
+    - can you tell me what is universal credit?
+    - Universal Credit
+    - please tell me what universal credit is?
+    - what is universal credit? what is it?
+
+- intent: where_you_get_uc
+  examples: |
+    - Where you get Universal Credit
+    - where do you get universal credit?
+    - How  do I get universal credit?
+    - How you make a claim for Universal Credit
+    - where do you make a claim for Universal Credit
+    - How do I apply for Universal Credit
+    - How do I come of Universal Credit?
+    - can i for apply universal credit
+    - want to apply universal credit
+    - from where i can get the universal credit
+    - which company give me the universal credit
+    - i have to apply at uk government website
+    - is government give me the universal credit
+    - who will give me the universal credit
+    - where i can apply for universal credit 
+    - i need universal credit 
+    - i want to apply for universal credit
+    - i have to apply at website for the universal credit 
+    - who will give the universal credit 
+    - who will help me for universal credit 
+    - where is the location where i can get the universal credit 
+    - is council give the universal credit 
+    - is ther any website where i have to apply for universal credit 
+    - i have to apply online at gov.uk
+    - is there any other website to apply for universal credit 
+    - can i get my universal credit from my bank
+    - what help is avalible to fill out my universal credit claim 
+    - i need help from where i can get universal credit
+    - any support avalible for universal credit  
+    - is council is included in universal credit 
+    - Where can I find help with the online Universal Credit application form?
+    - Can I ask the Department of Work and Pensions for Universal Credit?
+    - can someone insist me for universal credit 
+    - Will other organisations be able to get my universal credit 
+
+
+
+- intent: eligibility_uc
+  examples: |
+    - what are eligibility criteria for universal credit?
+    - what is universal credit eligibility?
+    - what's eligibility for universal credit?
+    - what is eligibility for universal credit?
+    - who is eligible for univarsal credit?
+    - can you tell me if I am eligible for univarsal credit?
+    - please guide me about eligibility for univarsal credit?
+    - share the eligibility criteria for universal credit
+    - i am eligible for universal credit
+    - Who can claim Universal Credits
+    - Who will get Universal Credit?
+    - universal credit eligibility
+    - i am eligible for universal credit
+    - any prerequisite for universal credit
+    - i am eligible for universal credit
+    - Universal Credit if you are an EEA or Swiss citizen living in Northern Ireland 
+    - universal credit eligibility
+    - what is the eligibility criteria for universal credit
+    - do i need a bank account for universal credit
+    - i am living outside england can i apply universal credit
+    - what is the age limit of universal credit
+    - universal credit term and condition
+    - I'm a pensioner, will I have to go on to Universal Credit?
+    - Can I refuse to go on Universal Credit and stay with my existing benefits?
+    - How can I find out what I need to do to be ready to claim Universal Credit?
+    - How do I know if I am eligible to claim Universal Credit?
+    - What information do I need to make a claim universal credit?
+    - can you off the universal credit if the circumstances change 
+    - what are the regulations for universal credit 
+    - What happens when someone on Universal Credit starts work?
+    - How does Universal Credit operate when someone works irregular hours?
+    - How does Universal Credit work alongside auto-enrolment?
+    - How does Universal Credit work with benefits in kind?
+    - can a student apply for universal credit 
+    - can a international student apply for universal credit 
+
+
+
+
+- intent: how_uc_paid
+  examples: |
+    - How is Universal Credit paid?
+    - how are universal credit credits paid
+    - how is the universal credit paid?
+    - how to pay universal credit
+    - how do I pay universal credit
+    - can you tell me how universal credit is paid ?
+    - guide me to pay universal credit
+    - please tell me the way that universal credit can be paid?
+    - how is the universal credit paid out?
+    - When will I get paid Universal Credit?
+    - Universal Credit is paid once a month 
+    - how do universal credit funds get paid?
+    - when i will get my first universal credit 
+    - what about my first universal credit payment
+    - When will I get paid Universal Credit?
+    - How will Universal Credit be paid to claimants?
+    - How and when Universal Credit paid
+    - when will universal credit paids
+    - How much is Universal Credit?
+    - How long will I have to wait for my first payment?
+    - how uk government will give my universal credit 
+    - is universal credit be paid after two weeks 
+    - how much i will get monthly from universal credit 
+    - If I'm struggling to manage before my first payment, can I get an advance - and how much? 
+    - How will Universal Credit be paid to claimants?
+    - How are bonuses going to affect Universal Credit payments?
+    - What do we do if employees say they have received a wrong Universal Credit payment?
+    - How is Universal Credit paid to families?
+    - What will happen if I get less money under Universal Credit than I do now?
+    - What help is there if I need money before I get my first Universal Credit payment?
+    - I'll struggle being paid monthly instead of every two weeks  what can I do?
+    - can i get my universal credit payment every two one instead of a month or four weeks 
+    - is universal credit is paid into my bank account 
+    - will i get message of universal credit payment
+    - will i get email of universal credit payment 
+    - will i get my universal credit onto my building society 
+    - will i get my universal credit into my credit union accaount 
+    - is housing cost will be included into universal credit payment
+    - alternative ways to get the universal credit payment
+    - will i and my partner both gets the one payment of universal credit 
+    - how much universal credit will i get if i earn 1,000 a month
+    - is universal credit paid from date of claim
+    - what will be the universal credit last payment 
+    - my universal credit payment is late
+
+
+- intent: other_benefits_uc
+  examples: |
+    - What other benefits can I get with Universal Credit?
+    - what other benefits can i get if i qualify for universal credit?
+    - what other benefits can one get out of universal credit?
+    - what benefits can i get with universal credit?
+    - other benefits of universal credit
+    - can you tell me other benefits of universal credit
+    - please share with me other benefits of universal credit
+    - What else is different about Universal Credit?
+    - universal credit differnces
+    - what other benefits can i get along with universal credit 
+    - what other benefits can i get with universal credit
+    - what benefits will included in universal credit 
+    - what are the other benefits of univerasl credit
+    - what other benefits can i get along with universal credit 
+    - can i added othe benefits in universal credit 
+    - can i include Attendance Allowance in universal credit 
+    - can i include Basic State Pension in universal credit 
+    - can i include Carer's Allowance in universal credit 
+    - can i include Child Benefit in universal credit 
+    - can i include Disability Living Allowance in universal credit 
+    - can i include Industrial Injuries Benefits in universal credit 
+    - can i include Local Council Tax support schemes in universal credit 
+    - can i include Local Welfare Provision in universal credit 
+    - can i include New State Pension in universal credit 
+    - can i include Pension Credit in universal credit 
+    - can i include Personal Independence Payment in universal credit 
+    - can i include Bereavement benefits in universal credit 
+    - can i include Maternity Allowance in universal credit 
+    - what other benefits can be entitle in universal credit 
+    - What are the sources of advice for benefits?
+    - what is the benefits terminolgy
+    - What is a benefit?
+    - What is benefits management?
+    - What are the core benefits?
+    - What other benefits could I get?
+    - Who pays benefits
+    - who give the benefits 
+    - can i claim for benefits 
+    - How benefits are paid
+    - What benefits has it replaced?
+    - what beneftis will be replace with universal credit 
+    - what other benefits can i claim with universal credit
+    - How Universal Credit affects Benefits
+    - What is the difference between the free benefits and the adviser benefits
+    - What groups of people are not included in the benefits
+    - who is eligible for benefits 
+    - How do changes to the benefits system affect me?  
+    - How do I get more advice about applying for benefits
+
+
+- intent: sanctions_uc
+  examples: |
+    - What happens if you get sanctioned on Universal Credit?
+    - what if you are sanctioned on universal credit?
+    - sanctions on universal credit
+    - tell me the sanctions on universal credit
+    - sanction on universal credit
+    - restrictions on universal credit
+    - what do you do if you are sanctioned on universal credit?
+    - what happens if you are sanctioned on universal credit?
+    - what will happen if you get sanctioned on universal credit?
+    - How does a Universal Sanction reduction work?
+    - What is a Universal Credit Sanction?
+    - How much is a Universal Credit sanction?
+    - How long do Universal Credit sanctions last?
+    - how long universal credit sanction last
+    - How does a Universal Sanction reduction work?
+    - What can I do if I don't agree with a sanction?
+    - what if i am not agree with universal credit sanction 
+    - How to avoid another Universal Credit sanction?
+    - What is a Universal Credit Sanction?
+    - How much is a Universal Credit sanction?
+    - How long do Universal Credit sanctions last?
+    - How does a Universal Sanction reduction work?
+    - what if i am not agree with universal credit sanction 
+    - How to avoid another Universal Credit sanction?
+    - universal credit sanctions for being sacked
+    - universal credit sanction for leaving job
+    - how long does a sanction last on universal credit
+    - universal credit sanctions mental health
+    - how to get a sanction lifted
+    - i just missed the universal credit sanction appointment
+    - where is universal credit sanction forum
+    - How much will a Universal Credit sanction be?
+    - how can i check the sanction
+    - Can I get any help during the sanction?
+    - How Universal Credit sanctions are applied
+    - universal credit sanction amounts
+    - how do you know if you have been sanctioned on universal credit
+    - How to avoid being sanctioned
+    - universal credit sanctions and housing costs
+    - universal credit sanctions mental health
+    - what i have to do my universal credit sanctions suspended
+    - How do I challenge a sanction
+    - How can I get financial help if I have a Universal Credit sanction?
+    - What reasons should I challenge a Universal Credit sanction
+    - Challenging a Universal Credit sanction because of a mental health condition
+    - want to challnege universal credit sanction due to different conditions
+    - what if i dont do to avoid the universal credit sanction
+    - How much can the DWP take from my Universal Credit if I am sanctioned?
+    - Mandatory reconsideration to challenge a Universal Credit sanction
+    - Higher level sanction
+    - Medium level sanction
+    - Low-level sanction
+    - Lowest level sanction
+    - How does a Universal Sanction reduction work?
+
+
+################################################################ SUPPORT FOR REFUGEES ################################################################
+
+- intent: refugees
+  examples: |
+    - what is a refugee
+    - what are refugees
+    - What it means to be refugee?
+    - What is an example of a refugee?
+    - who is a refugee
+
+
+- intent: hosting_refugees
+  examples: |
+    - how can i bring a refugee at my home 
+    - what is procedure to bring refugee at home
+    - Will Refugees At Home check in with me?
+    - can a refugee come to my home along with me
+    - can i give shelter to a refugee
+    - is it posssible to accomodate the refugee
+    - hosting a refugee is legal
+    - what happens after a refugee arrives
+    - how long can i accomodate a refugee
+    - how long a refugee stay at home 
+    - how long am in expected to accomodate a refugee
+    - If I decide not to host, is there anything else I can do to help?
+    - What is a refugee?
+    - I want to host a refugee
+    - i want to host a refugee what is a procedure
+    - spare room for a refugee
+    - need spare room for refugee
+    - how can refugee finds room
+    - place for refugee to stay
+    - offer a place for refugee
+    - need place for refugee
+    - refugee needs place
+    - Become a host
+    - i want to become a host 
+    - i am refugee need help
+    - want to become a host
+    - i am refugee
+    - i am refugee seeker
+    - Where do refugees go?
+    - where is the place for refugees
+    - who host the refugee
+    - how can i host a refugee
+    - can i provide my home for refugee
+    - i have a spare room for refugee
+    - I want to offer some accommodation for refugee
+
+- intent: support_refugees
+  examples: |
+    - Who supports refugees?
+    - How can I get support for as a refugee
+    - Contacting the Refugee Council
+    - can i get help as a refugee?
+    - how can i get help as a refugee?
+    - how do i get support as a refugee?
+    - who can help refugees
+    - space for the refugee
+    - i am currently not in the uk how do i request for support 
+    - i am outside uk how can i get request for support
+    - how do i request for support
+    - how can i get support outside uk
+    - how do i see all the services you offer
+    - how do i see all the services for refugees
+    - how can i get the refugees services
+    - how can i get support as a refugee
+    - support as a refugee
+    - Who supports refugees
+    - support for refugee
+    - who provide the services for refugee
+    - who provide services for refugee
+    - i am currently not in the uk how do i request for support 
+    - i am outside uk how can i get request for support
+    - how do i request for support
+    - how can i get support outside uk
+    - i resides in scotland, wales or northern ireland how do i request support
+    - i am not in uk so how do i get request for support
+    - request for support
+    - how do i see all the services for refugees
+    - how can i get the refugees services
+    - how can i contact to refugee concil
+    - how can i get the refugee council contact
+    - How can I get support for as a refugee
+    - support as a refugee
+    - Who supports refugees
+    - support for refugee
+    - who provide the services for refugee
+    - legal problem with my refugee protection
+    - how UNHCR helps refugees
+    - what services do refugees get
+    - what benefits does refugees get
+    - What rights does a refugee have?
+    - What are the obligations of a refugees?
+    - who take decision for refugees
+    - May governments deport persons who are found not to be refugees?
+    - What does UNHCR do to protect refugees from physical assault?
+    - if the refugee is physical assault who is responsible 
+    - Can refugees request resettlement in a specific country?
+    - What benefits do refugee-seekers receive in the UK?
+
+- intent: local_refugee_groups
+  examples: |
+    - Where do I find local refugee support groups
+    - how can I get connected to Local refugee networks
+    - Local refugee networks 
+    - Networks for refugees
+    - where is the network for refugees
+    - Is there any network for refugees
+    - can i find refugee support groups in my area?
+    - where can i find refugee support groups in the region?
+    - can i find refugee support groups?
+    - where can i find refugee support groups?
+    - how do i get connected to the refugee networks?
+    - is there any refugee network?
+    - is there any network for refugees?
+    - where are refugee networks?
+    - Where do I find local refugee support groups
+    - where i find refugee support group
+    - find local refugee groups for support
+    - do refugee network facilitate
+    - Where do I find local refugee support groups
+    - Local refugee networks 
+    - Networks for refugees  
+    - advice from local refugee groups 
+    - Where do I find local refugee support groups
+    - how can I get connected to Local refugee networks
+    - where is the network for refugees
+    - Is there any network for refugees
+    - can i find refugee support groups in my area?
+    - where can i find refugee support groups in the region?
+    - can i find refugee support groups?
+    - where can i find refugee support groups?
+    - how do i get connected to the refugee networks?
+    - is there any refugee network?
+    - is there any network for refugees?
+    - where are refugee networks?
+    - Where do I find local refugee support groups
+    - where i find refugee support group
+    - find local refugee groups for support
+    - where can i find refugee support groups locally?
+    - where can i find refugee support groups at home?
+    - where can i find local refugee groups?
+    - where can i find refugee support groups?
+    - how can i find local refugee support groups?
+    - where can i find local refugee support groups?
+
+################################################################ Starting a Business ################################################################
+
+- intent: starting_business 
+  examples: |
+    - Starting a business
+    -  start a business
+    - tell me about business
+
+- intent: becoming_entrepreneur 
+  examples: |
+    - what would be the monthly income to become an entrepreneur
+    - How much should I capitalize my business with at the beginning?
+    - How can I get a venture capitalist to pay attention to me?
+    - What are the biggest mistakes made by start-up entrepreneurs?
+    - what were some of the mistakes that startups make in their early-stage career?
+    - How can I protect my great idea for startup 
+    - How can I drive traffic to my website for my business?
+    - I have an invention idea. What do I do to check that someone hasn't already invented this idea?
+    - Where can I get money for my startup
+    - who can help me for startup
+    - can i get loan for my startup
+    - What permits, licenses or registrations do I need for my startup?
+    - How should equity be divided among co-founders of a start-up?
+    - any online tool for entrepreneur
+    - how do i become an entrepreneur?
+    - how to become an entrepreneur?
+    - Becoming an Entrepreneur  	
+    - i want to be an entrepreneur
+
+- intent: how_start_business
+  examples: |
+    - How to start a business
+    - how do you start a business?
+    - What online resources are helpful for learning more about starting a business
+    - What are the biggest challenges to starting a bussiness?
+    - How can I come up with a great name for my business?
+    - what is the procedure to start a business
+    - What kind of bussiness should I start?
+    - how do i start my own business?
+    - tell me the process of starting a business?
+    - tell me the procedure for starting a business?
+    - what is business plan
+    - Do I need a lawyer to start a business?
+    - How to start a business with no money
+    - How to get a business loan
+    - What kind of books and records do I need to keep for my business?
+    - How to register a business name
+    - How to start a business from home
+    - How to start a business on Instagram
+    - How to get funding for a new business
+    - How much does it cost to register a business 
+    - How to apply for small business grant
+    - how can i get the inforamtion to start small business
+    - I want to start a business, but I don't know where to begin
+    - what is the good time to start a bussiness
+    - how can i check i am ready to start a business
+    - Can I start a business on a Tier 2 visa?
+    - how do i start up a business?
+    - tell me the procedure for launching a new business?
+    - how do you start a new business?
+
+
+- intent: advice_on_starting_business 
+  examples: |
+    - from where can i get advice to start a business
+    - who will help me to start a business
+    - i need support for a new business
+    - can someone help me to start a business
+    - which orginization helps to start a business
+    - who can help me to start a business in uk
+    - will i charge for advice to start a business   
+    - What legal forms can my business take?
+    - What directors do I need for a new company?
+    - What pitfalls should I look out for if I buy a new company?  
+    - Are there any business names that are not allowed?
+    - which business names are not allowed
+    - What details do we need on our business stationery?
+    - What signs do we need on our business premises?
+    - What other legal issues do I need to consider when starting a business?
+
+################################################################ OUT OF SCOPE ################################################################
+
+- intent: out_of_scope
+  examples: |
+    - what is the square root of 5
+    - I want to know the weather
+    - what is the meaning of life.
+    - Fridge Isn't Running
+    - my tv isn't working
+    - I want a pizza
+    - my washing machine isn't working
+    - what year is it
+    - order a pizza
+    - I want to order a pizza
+    - what is the weather today
+    - what is the weather
+    - what the weather today ?
+    - hows the weather
+    - tell me a joke
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - ofif fsdfafsfs
